@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Picture Section left-->
+    <!-- Image section sidebar-->
     <div class="sidebar-img-container">
         <img src="images/Mountains behind lake.jpeg" alt="Mountain behind lake">
         <div class="sidebar-banner"></div>
@@ -20,11 +20,41 @@
         <text x="60" y="72" text-anchor="middle" fill="white" font-family="Libertinus Mono, sans-serif" font-size="35" font-weight="50">AGT</text>
         </svg>
     </div>
-    <!-- Header with Intro-->
-     <div>
-        <p>This is not an actual sign up form.</p>
-        <p>This sleek and minimal signup form showcases advanced frontend development skills including real-time form validation, responsive design, and smooth user interactions. Built with modern web technologies to demonstrate clean code architecture and attention to user experience.</p>
-     </div>
+    <div class="main-content">
+        <!-- Header with Intro -->
+        <div class="box" id="intro-box">
+            <p>This sleek and minimal signup form showcases frontend development skills including real-time form validation, responsive design, and smooth user interactions. Built with modern web technologies to demonstrate clean code architecture and attention to user experience.</p>
+        </div>
+        <!-- Form section -->
+        <div class="box" id="form-box">
+            <p>Let's get started!</p>
+            <form action="url" method="post">
+                <fieldset>
+                    <div class="form-row">
+                        <label for="First name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name">
+                        <label for="Last name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                    <div class="form-row">
+                        <label for="Mail">MAIL</label>
+                        <input type="email" name="mail_address" id="mail_address">
+                        <label for="Phone">PHONE</label>
+                        <input type="number" name="phone_number" id="phone_number">
+                    </div>
+                    <div class="form-row">
+                        <label for="Password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                        <label for="Confirm password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- Footer section -->
+        <div class="box" id="footer-box">
 
+        </div>
+    </div>
 </body>
 </html>
