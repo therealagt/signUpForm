@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-img-container {
+    width: 350px;        
+    height: 100vh;       
+    overflow: hidden;    
+    position: relative;  
+    left: 0;
+    top: 0;
+}
+
+.sidebar-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    object-position: left;   
+}
+
+.sidebar-banner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.sidebar-img-container svg {
+    position: absolute;
+    top: 45%;      
+    left: 50%;    
+    transform: translateX(-50%);
+    z-index: 2;    
+}
