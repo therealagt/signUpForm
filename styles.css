@@ -28,7 +28,7 @@ body {
 
 .sidebar-banner {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 0;
     width: 100%;
     height: 80px; 
@@ -39,7 +39,7 @@ body {
 
 .sidebar-img-container svg {
     position: absolute;
-    top: 42%;      
+    top: 45%;      
     left: 50%;    
     transform: translateX(-50%);
     z-index: 2;    
@@ -60,7 +60,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
     line-height: 1.6;
-    color: rgb(102, 104, 107);
+    color: rgb(105, 112, 124);
     padding: 50px;
     padding-top: 80px;
     font-size: 24px;
@@ -70,20 +70,11 @@ body {
 
 #form-box {
     background-color: white;
-    height: 30%;
+    height: 25%;
     padding: 20px;
     border-radius: 8px;
     text-align: left;
     padding-left: 150px;
-}
-
-#form-box p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(101, 101, 104);
-    font-size: 16px;
-    font-weight: 500;
-    text-align: left;
-    margin-left: -80px;
 }
 
 fieldset {
@@ -111,13 +102,42 @@ fieldset {
 
 .form-row input {
     width: 180px;
-    height: 30px;
+    height: 20px;
     padding-right: 1rem;
+    padding-left: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+/* Footer Box */
+
 #footer-box {
     background-color: rgb(241, 238, 238);
-    height: 30%;
+    height: 35%;
+    padding: 50px;
+    text-align: center;
+}
+
+#account {
+    margin-top: 25px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #fffdfd;
+    background-color: rgb(59, 65, 60);
+    color: white;
+    opacity: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#footer-box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: rgb(105, 112, 124);
+    margin-top: 18px;
+}
+
+#footer-box a {
+    font-weight: 700;
 }
