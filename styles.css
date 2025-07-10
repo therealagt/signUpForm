@@ -107,6 +107,8 @@ fieldset {
     padding-left: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Footer Box */
@@ -120,8 +122,8 @@ fieldset {
 
 #account {
     margin-top: 25px;
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 35px;
     border-radius: 10px;
     border-color: #fffdfd;
     background-color: rgb(59, 65, 60);
@@ -139,5 +141,23 @@ fieldset {
 }
 
 #footer-box a {
-    font-weight: 700;
+    font-weight: 600;
+    color: #5e5d5d;
+}
+
+/* Pseudo Classes */
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

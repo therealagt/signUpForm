@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Image section sidebar-->
     <div class="sidebar-img-container">
         <img src="images/Mountains behind lake.jpeg" alt="Mountain behind lake">
@@ -21,38 +22,42 @@
         </svg>
     </div>
     <div class="main-content">
+
         <!-- Header with Intro -->
         <div class="box" id="intro-box">
             <p>This sleek and minimal signup form showcases frontend development skills including real-time form validation, responsive design, and smooth user interactions. Built with modern web technologies to demonstrate clean code architecture and attention to user experience.</p>
         </div>
+
         <!-- Form section -->
         <div class="box" id="form-box">
             <form action="url" method="post">
                 <fieldset>
                     <div class="form-row">
                         <label for="First name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <input type="text" name="first_name" id="first_name" minlength="2". required placeholder="">
                         <label for="Last name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <input type="text" name="last_name" id="last_name" minlength="2" required placeholder="">
                     </div>
                     <div class="form-row">
                         <label for="Mail">MAIL</label>
-                        <input type="email" name="mail_address" id="mail_address">
+                        <input type="email" name="mail_address" id="mail_address" required placeholder="">
                         <label for="Phone">PHONE</label>
-                        <input type="text" name="phone_number" id="phone_number">
+                        <input type="tel" name="phone_number" id="phone_number" pattern="^\d{9,11}$" required placeholder="">
                     </div>
                     <div class="form-row">
                         <label for="Password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="8" maxlength="24" required placeholder=""> 
                         <label for="Confirm password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                        <input type="password" name="confirm_password" id="confirm_password" minlength="8" maxlength="24" required placeholder="">
                     </div>
                 </fieldset>
             </form>
         </div>
+
         <!-- Footer section -->
         <div class="box" id="footer-box">
-
+            <button id="account">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a> </p>
         </div>
     </div>
 </body>
